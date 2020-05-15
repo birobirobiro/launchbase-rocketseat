@@ -1,0 +1,108 @@
+@import 'https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;600&display=swap';
+
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background-color: #282a36;
+  font-family: 'Fira Code', monospace;
+  color: white;
+}
+
+#wrapper {
+  text-align: center;
+  margin: auto;
+  padding: 32px;
+}
+
+.courses {
+    max-width: 60%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.bootcamps {
+ background-color: black;
+ border-radius: 10px 10px 0px 0px;
+ padding: 30px;
+}
+
+.card .bootcamps {
+  text-align: center;
+}
+
+.card .bootcamps img {
+  height: 200px;
+  width: 100%;
+}
+
+.card {
+  background-color: #7159c1;
+  border-radius: 10px;
+  min-width: 300px;
+  min-height: 400px;
+}
+
+.description {
+  padding: 20px;
+}
+
+.modules {
+  padding-left: 20px;
+  font-weight: bold;
+  color: #f1fa8c;
+}
+
+.price {
+  padding-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #50fa7b;
+}
+
+/* MODAL */
+
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal {
+  background-color: white;
+  width: 90%;
+  height: 90%;
+  margin: 5vh auto;
+  position: relative;
+}
+
+.modal .close-modal {
+  color: black;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  cursor: pointer;
+}
+
+/* MODAL.ACTIVE */
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+iframe {
+  width: 100%;
+  height: 90%;
+  position: absolute;
+  top: 5%;
+}
