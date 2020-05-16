@@ -16,6 +16,6 @@
 ## Indice
 
 * [Módulo 1](https://github.com/birobirobiro/launchbase-rocketseat/tree/master/desafios-launchbase/modulo01)
-* [Módulo 2](https://github.com/birobirobiro/launchbase-rocketseat/tree/master/desafios-launchbase/modulo022)
+* [Módulo 2](https://github.com/birobirobiro/launchbase-rocketseat/tree/master/desafios-launchbase/modulo02)
 * [Módulo 3](#)
 * [Módulo 4](#)
