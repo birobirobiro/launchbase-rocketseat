@@ -89,7 +89,17 @@ body {
   color: black;
   position: absolute;
   right: 8px;
-  top: 8px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.modal .maximize-modal {
+  color: black;
+  position: absolute;
+  right: 52px;
+  top: 10px;
+  width: 2px;
+  height: 2px;
   cursor: pointer;
 }
 
@@ -105,4 +115,12 @@ iframe {
   height: 90%;
   position: absolute;
   top: 5%;
+}
+
+.maximize {
+ position: absolute;
+ top: 0;
+ right: 0;
+ left: 0;
+ bottom: 0;
 }
