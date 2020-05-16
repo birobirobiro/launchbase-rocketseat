@@ -12,7 +12,7 @@ for (let card of courses) {
 
 const closeModal = document.querySelector('.close-modal').addEventListener("click", function() {
   modalOverlay.classList.remove('active');
-  modalOverlay.classList.remove('check_box_outline_blank')
+  modal.classList.remove('maximize');
   modalOverlay.querySelector('iframe').src="";
 });
 
