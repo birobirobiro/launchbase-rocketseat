@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background-color: white;  
+  font-family: 'Roboto', sans-serif;
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.menu  img{
+  padding-top: 36.1px;
+  padding-right: 122.4px;
+  width: 90.6px;
+  height: 26.9px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.menu h3 {
+ padding-top: 38px;
+ padding-right: 30px; 
+ font-weight: normal;
+ font-size: 16px;
+}
+
+.chef {
+  width: 940px;
+  height: 366px;
+  margin-top: 36px;
+  border: 1px solid #FBDFDB;
+  background-color: #FBDFDB;
+  border-radius: 30px;
+}
+
+.chef img {
+  float: right;
+  padding-right: 100px;
+  padding-top: 66px;
+}
+
+.chef .text-chef {
+  display: block;
+}
+
+.chef .text-chef h2 {
+  font-size: 32px;
+  max-width: 305px;
+  max-height: 38px;
+  margin-right: 117px;
+  margin-bottom: 10px;
+  margin-top: 117px;
+  margin-left: 60px;
+}
+
+.chef .text-chef p {
+  font-size: 18px;
+  font-weight: normal;
+  max-width: 316px;
+  max-height: 84px;
+  margin-right: 564px;
+  margin-bottom: 10px;
+  margin-left: 60px;
+  opacity: 0.7;
+}
