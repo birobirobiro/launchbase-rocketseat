@@ -5,33 +5,85 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style/style.css">
-  <link rel="icon" href="/desafios-launchbase/modulo02/foodfy/assets/food.ico" type="image/x-icon" />
+  <link rel="icon" href="./assets/food.ico" type="image/x-icon" />
   <title>Foodfy</title>
 </head>
 
 <body>
 
-  <header>
+  <div class="wrapper">
 
+    <header>
       <div class="menu">
         <img src="./assets/logo.png" alt="logo">
-        <h3>Sobre</h3>
-        <h3>Receitas</h3>
+        <a href="./sobre/sobre.html">Sobre</a>
+        <a href="./sobre/receitas.html">Receitas</a>
       </div>
-  </header>
+    </header>
 
-  <section class="chef">
-    <div class="img-chef">
-      <img src="./assets/chef.png" alt="">
-    </div>
+    <section class="chef">
+      <div class="img-chef">
+        <img src="./assets/chef.png" alt="">
+      </div>
 
-    <div class="text-chef">
-      <h2>As melhores receitas</h2>
-      <p>
-        Aprenda a construir os melhores pratos com receitas criadas por profissionais do mundo inteiro.
-      </p>
-    </div>
-  </section>
+      <div class="text-chef">
+        <h2>As melhores receitas</h2>
+        <p>
+          Aprenda a construir os melhores pratos com receitas criadas por profissionais do mundo inteiro.
+        </p>
+      </div>
+    </section>
+
+    <section class="most-acess">
+
+      <div class="text">
+        <h2>Mais Acessadas</h2>
+      </div>
+
+
+      <div class="recipes">
+        <div class="recipes-item" id="burguer">
+          <img src="./assets/burger.png" alt="burguer">
+          <h3>Triplo bacon burguer</h3>
+          <h5>por Jorge Relato</h5>
+        </div>
+
+        <div class="recipes-item" id="pizza">
+          <img src="./assets/pizza.png" alt="burguer">
+          <h3>Pizza 4 estações</h3>
+          <h5>por Fabiana Melo</h5>
+        </div>
+
+        <div class="recipes-item" id="espaguete">
+          <img src="./assets/espaguete.png" alt="burguer">
+          <h3>Espaguete ao alho</h3>
+          <h5>por Júlia Kinoto</h5>
+        </div>
+
+        <div class="recipes-item" id="lasanha">
+          <img src="./assets/lasanha.png" alt="burguer">
+          <h3>Lasanha mac n’ cheese</h3>
+          <h5>por Juliano Vieira</h5>
+        </div>
+
+        <div class="recipes-item" id="doce">
+          <img src="./assets/doce.png" alt="burguer">
+          <h3>Docinhos pão-do-céu</h3>
+          <h5>por Ricardo Golvea</h5>
+        </div>
+
+        <div class="recipes-item" id="asinhas">
+          <img src="./assets/asinhas.png" alt="burguer">
+          <h3>Asinhas de frango ao barbecue</h3>
+          <h5>por Vania Steroski</h5>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <p>Todos direitos reservados, receitas Foodfy.</p>
+  </footer>
 
 </body>
 
