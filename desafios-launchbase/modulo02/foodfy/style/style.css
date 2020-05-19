@@ -170,3 +170,42 @@ body {
   color: #444444;
   line-height: 28px;
 }
+
+/* RECEITAS */
+
+.recipes-page {
+  padding-top: 56px;
+}
+
+.recipes-page .text {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.recipes-page img {
+  border-radius: 15px;
+  width: 300px;
+  height: 140px;
+}
+
+.recipes-page h3 {
+  font-weight: normal;
+  font-size: 18px;
+  padding-top: 20px;
+}
+
+.recipes-page h5 {
+  font-weight: normal;
+  color: #777777;
+  font-size: 14px;
+  padding-top: 5px;
+  padding-bottom: 30px;
+}
+
+.recipes-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
