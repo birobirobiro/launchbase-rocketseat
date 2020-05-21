@@ -209,3 +209,70 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
 }
+
+/* MODAL */
+
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  opacity: 0.6;
+  visibility: hidden;
+}
+
+.modal {
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  width: 660px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 30px;
+  margin: 0 auto;
+  visibility: hidden;
+}
+
+.modal button {
+  font-size: 16px;
+  background: none;
+  color: #999;
+  margin: 0 auto;
+  display: block;
+  margin-top: 80px;
+}
+
+.modal .img-recipes img {
+  width: 100%;
+  height: 200px;
+  border-radius: 15px;
+  object-fit: cover;
+
+}
+
+.modal .name-recipes {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.modal .author-recipes {
+  color: #777;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+/* MODAL ACTIVE */
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal.active {
+  visibility: visible;
+}
+
