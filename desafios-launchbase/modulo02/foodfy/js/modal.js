@@ -19,9 +19,3 @@ for (let card of cards) {
     console.log(card);
   })
 }
-
-console.log(modalOverlay);
-console.log(modal);
-
-
-// card = document.getElementeById(id); card_img = card.getElementByTag("img"); Dessa forma vc pegou a imagem do card que passou o Id, espero que isso ajude hahah
