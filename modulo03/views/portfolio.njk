@@ -1,130 +1,53 @@
-{% extends "layout.html" %}
+{% extends "layout.njk" %}
 
 {% block head %}
 
-<title>Portfolio</title>
+  <title>Portfolio</title>
 
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 {% endblock %}
 
 {% block content %}
 
-<div id="wrapper">
-  <h1>Aulas</h1>
-</div>
+  <div id="wrapper">
+    <h1>Aulas</h1>
+  </div>
 
+  <section class="cards">
 
-<section class="cards">
+    {% for item in items %}
 
-  <div class="card" id="GykTLqODQuU">
-    <div class="card__image-container">
-      <img
-        src="https://i.ytimg.com/vi/GykTLqODQuU/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLB2kW0XSHYGwxQu4SP70_deXPez8g"
-        alt="Video Aula">
-    </div>
+      <div class="card" id={{item.id}}>
+        <div class="card__image-container">
+        <img src="https://img.youtube.com/vi/{{item.id}}/hqdefault.jpg" alt="Imagem de {{item.title}}">
+        </div>
 
-    <div class="card__content">
-      <p>Formulário Animado com JS puro e CSS Animation | Mayk Brito</p>
-    </div>
+        <div class="card__content">
+          <p>{{item.title}}</p>
+        </div>
 
-    <div class="card__info">
-      <p>57 min</p>
-      <p class="card__price">FREE</p>
+        <div class="card__info">
+          <p>{{item.duration}}</p>
+          <p class="card__price">{{item.price}}</p>
+        </div>
+      </div>
+
+    {% endfor %}
+
+  </section>
+
+  <div class="modal-overlay">
+    <div class="modal">
+      <a class="close-modal">
+        <i class="material-icons">close</i>
+      </a>
+
+      <div class="modal-content">
+        <iframe src="" frameborder="0"></iframe>
+      </div>
     </div>
   </div>
 
-  <div class="card" id="HN1UjzRSdBk">
-    <div class="card__image-container">
-      <img
-        src="https://i.ytimg.com/vi/HN1UjzRSdBk/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDfYA6-XPhMAYT_hJ4BqnQ9EHH9Lw"
-        alt="Video Aula">
-    </div>
-
-    <div class="card__content">
-      <p>Desvendando o CSS Grid na prática | Mayk Brito</p>
-    </div>
-
-    <div class="card__info">
-      <p>36 min</p>
-      <p class="card__price">FREE</p>
-    </div>
-  </div>
-
-  <div class="card" id="rAzHvYnQ8DY">
-    <div class="card__image-container">
-      <img src="https://img.youtube.com/vi/rAzHvYnQ8DY/maxresdefault.jpg" alt="Video Aula">
-    </div>
-
-    <div class="card__content">
-      <p>Array: Higher Order Functions | Mayk Brito</p>
-    </div>
-
-    <div class="card__info">
-      <p>54 min</p>
-      <p class="card__price">FREE</p>
-    </div>
-  </div>
-
-  <div class="card" id="ghTrp1x_1As">
-    <div class="card__image-container">
-      <img
-        src="https://i.ytimg.com/vi/ghTrp1x_1As/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLC81yv0edu01L29kl05dAtlzwpzRw"
-        alt="Video Aula">
-    </div>
-
-    <div class="card__content">
-      <p>O que é API? REST e RESTful? | Mayk Brito</p>
-    </div>
-
-    <div class="card__info">
-      <p>33 min</p>
-      <p class="card__price">FREE</p>
-    </div>
-  </div>
-
-  <div class="card" id="GSqR2i-Pq6o">
-    <div class="card__image-container">
-      <img src="https://img.youtube.com/vi/GSqR2i-Pq6o/maxresdefault.jpg" alt="Video Aula">
-    </div>
-
-    <div class="card__content">
-      <p>Desvendando a variável this no Javascript | Mayk Brito</p>
-    </div>
-
-    <div class="card__info">
-      <p>48 min</p>
-      <p class="card__price">FREE</p>
-    </div>
-  </div>
-
-  <div class="card" id="2alg7MQ6_sI">
-    <div class="card__image-container">
-      <img src="https://img.youtube.com/vi/2alg7MQ6_sI/maxresdefault.jpg" alt="Video Aula">
-    </div>
-
-    <div class="card__content">
-      <p>Como usar Git e Github na prática: Guia para iniciantes | Mayk Brito</p>
-    </div>
-
-    <div class="card__info">
-      <p>33 min</p>
-      <p class="card__price">FREE</p>
-    </div>
-  </div>
-</section>
-
-<div class="modal-overlay">
-  <div class="modal">
-    <a class="close-modal">
-      <i class="material-icons">close</i>
-    </a>
-
-    <div class="modal-content">
-      <iframe src="" frameborder="0"></iframe>
-    </div>
-  </div>
-</div>
-
-<script src="scripts.js"></script>
+  <script src="scripts.js"></script>
 
 {% endblock %}
