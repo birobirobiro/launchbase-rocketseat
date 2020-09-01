@@ -9,10 +9,6 @@
   🚀 Desafios realizados durante a jornada LaunchBase
 </h1>
 
-
-testando o teste
-
-
 ----
 
 ## Indice
