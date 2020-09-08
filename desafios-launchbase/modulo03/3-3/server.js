@@ -18,11 +18,17 @@ server.get("/", function(req, res) {
   return res.render("courses", {courses});
 })
 
-server.get("/courses2/:id", function(req, res) {
-  const id = req.params.id;
+server.get("/courses/:id", function(req, res) {
+  const id = req.params.id
 
-  return res.render("courses2", {id});
-});
+  const course = courses.find(course => course.id === id);
+
+  if (!course) {
+      return res.send("Curso não encontrado.")
+  }
+  
+  return res.render(`${id}`)
+})
 
 server.get("/about", function(req, res) {
   const about = { 

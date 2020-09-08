@@ -7,7 +7,7 @@ module.exports = [
   description: "Cursos 100% online e gratuitos para você entrar com o pé direito nas tecnologias mais desejadas do mercado."
 },
 {
-  id: "lauchbase",
+  id: "launchbase",
   logo: "img/launchbase.svg",
   price: "R$ 800,00",
   modules: "60 módulos",
