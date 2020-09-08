@@ -13,7 +13,6 @@ nunjucks.configure("views", {
   noCache: true
 })
 
-
 server.get("/", function(req, res) {
   const courses = [
     {
@@ -36,8 +35,9 @@ server.get("/", function(req, res) {
       price: "R$ 1.000,00",
       modules: "300 módulos",
       description: "GoStack é o bootcamp da Rocketseat voltado para quem já manja de programação. Nele você irá aprender a stack ReactJS, React Native, TypeScript e NodeJS."
-    },
-  ]
+    } 
+    
+    ]
   return res.render("courses", {courses});
 })
 
