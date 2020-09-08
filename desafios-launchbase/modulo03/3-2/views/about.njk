@@ -1,0 +1,43 @@
+  {% extends "layout.njk" %}
+  
+  {% block head %}
+  <title>About</title>
+  <link rel="stylesheet" href="/style_about.css">
+  {% endblock %}
+
+  {% block content %}
+   <div class="empresa">
+      Rocketseat
+    </div>
+
+    <div class="logo">
+      <img src="{{about.logo}}" alt="logo">
+    </div>
+
+    <div class="descricao">
+      <p>Descrição:</p></br>
+      {{about.description}}
+    </div>
+
+    <div class="tecnologias">
+      <p> Tecnologias utilizadas:</br></br>
+        <ul>
+         {% for tech in about.techs %}
+              <li>{{tech}}</li>
+         {% endfor %}
+        </ul>
+     </p>
+    </div>    
+
+    <div class="links">
+      <p>
+        Links:</br></br>
+
+        {% for social in about.links %}
+
+        <a href='{{social.url}}' target="_blank">{{social.name}} </a>
+
+        {% endfor %}
+      </p>
+    </div>
+  {% endblock %}

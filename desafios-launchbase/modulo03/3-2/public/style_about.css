@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body {
+background: #282a36;
+font-family: 'Roboto', sans-serif;
+color: #f8f8f2;
+}
+
+.empresa {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 80px;
+  color: #7159c1;
+  padding-bottom: 10px;
+}
+
+
+
+.logo img {
+  width: 300px;
+  height: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100%;
+  border: 5px solid #50fa7b;
+}
+
+.descricao {
+  padding: 20px;
+  font-size: 15px;
+  text-align: center;
+  font-weight: normal;
+}
+
+.tecnologias {
+  padding: 20px;
+}
+
+.tecnologias ul {
+  padding-left: 20px;
+}
+
+.links {
+  padding: 20px;
+  text-decoration: none;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+}
+.links a:hover {
+  color: #50fa7b;
+  transition: color 700ms;
+}
