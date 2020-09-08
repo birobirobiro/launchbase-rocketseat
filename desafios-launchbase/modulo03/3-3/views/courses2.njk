@@ -1,0 +1,58 @@
+{% extends "layout.njk" %}
+
+  {% block head%}
+  <title>Cursos</title>
+  <link rel="stylesheet" href="/style_courses.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet">
+  {% endblock %}
+
+ {% block content %}
+  <div id="wrapper">
+    <h1>Cursos</h1>
+  </div>
+
+  <section class="courses">
+   {% for course in courses %}
+
+    <div class="card" id="{{course.id}}">
+      <div class="bootcamps" >
+        <img src="{{course.logo}}" alt="{{course.id}}">
+      </div>
+
+      <div class="price">
+        {{course.price}}
+      </div>
+
+      <div class="modules">
+        {{course.modules}}
+      </div>
+
+      <div class="description">
+        <p>{{course.description}}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </section>
+
+  <div class="modal-overlay">
+    <div class="modal">
+
+      <a class="maximize-modal">
+        <i class="material-icons">check_box_outline_blank</i>
+      </a>
+
+      <a class="close-modal">
+        <i class="material-icons">close</i>
+      </a>
+
+      <div class="modal-content">
+        <iframe src="" frameborder="0"></iframe>
+      </div>
+      
+    </div>
+  </div>
+
+  <script src="scripts_courses.js"></script>
+ 
+ {% endblock %}
