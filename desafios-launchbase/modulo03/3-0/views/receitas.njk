@@ -1,0 +1,106 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+  <title>Receitas</title>
+{% endblock %}
+
+{% block content %}
+
+  <section class="recipes-page">
+
+    <div class="recipes-grid">
+      <div class="recipes-item" id="burguer">
+        <img src="../assets/burger.png" alt="burguer">
+        <h3>Triplo bacon burguer</h3>
+        <h5>por Jorge Relato</h5>
+    </div>
+
+      <div class="recipes-item" id="pizza">
+        <img src="../assets/pizza.png" alt="burguer">
+        <h3>Pizza 4 estações</h3>
+        <h5>por Fabiana Melo</h5>
+      </div>
+
+      <div class="recipes-item" id="espaguete">
+        <img src="../assets/espaguete.png" alt="burguer">
+        <h3>Espaguete ao alho</h3>
+        <h5>por Júlia Kinoto</h5>
+      </div>
+
+      <div class="recipes-item" id="lasanha">
+        <img src="../assets/lasanha.png" alt="burguer">
+        <h3>Lasanha mac n’ cheese</h3>
+        <h5>por Juliano Vieira</h5>
+      </div>
+
+      <div class="recipes-item" id="doce">
+        <img src="../assets/doce.png" alt="burguer">
+        <h3>Docinhos pão-do-céu</h3>
+        <h5>por Ricardo Golvea</h5>
+      </div>
+
+      <div class="recipes-item" id="asinhas">
+        <img src="../assets/asinhas.png" alt="burguer">
+        <h3>Asinhas de frango ao barbecue</h3>
+        <h5>por Vania Steroski</h5>
+      </div>
+
+      <div class="recipes-item" id="burguer">
+        <img src="../assets/burger.png" alt="burguer">
+        <h3>Triplo bacon burguer</h3>
+        <h5>por Jorge Relato</h5>
+      </div>
+
+      <div class="recipes-item" id="pizza">
+        <img src="../assets/pizza.png" alt="burguer">
+        <h3>Pizza 4 estações</h3>
+        <h5>por Fabiana Melo</h5>
+      </div>
+
+      <div class="recipes-item" id="espaguete">
+        <img src="../assets/espaguete.png" alt="burguer">
+        <h3>Espaguete ao alho</h3>
+        <h5>por Júlia Kinoto</h5>
+      </div>
+
+      <div class="recipes-item" id="lasanha">
+        <img src="../assets/lasanha.png" alt="burguer">
+        <h3>Lasanha mac n’ cheese</h3>
+        <h5>por Juliano Vieira</h5>
+      </div>
+
+      <div class="recipes-item" id="doce">
+        <img src="../assets/doce.png" alt="burguer">
+        <h3>Docinhos pão-do-céu</h3>
+        <h5>por Ricardo Golvea</h5>
+      </div>
+
+      <div class="recipes-item" id="asinhas">
+        <img src="../assets/asinhas.png" alt="burguer">
+        <h3>Asinhas de frango ao barbecue</h3>
+        <h5>por Vania Steroski</h5>
+      </div>
+    </div>
+  </section>
+{% endblock %}
+
+{% block modal %}
+  <div class="modal-overlay"></div>
+
+  <div class="modal">
+    <div class="img-recipes">
+      <img src="../assets/pizza.png" alt="&#x1F355;" srcset="">
+    </div>
+    <div class="name-recipes">
+      <p>Asinhas de frango ao barbecue</p>
+    </div>
+    <div class="author-recipes">
+      <p>por Vania Steroski</p>
+    </div>
+    <button class="close-modal">
+      <p>Fechar modal</p>
+    </button>
+  </div>
+
+  <script src="/modal.js"></script>
+{% endblock %}

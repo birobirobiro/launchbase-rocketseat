@@ -1,0 +1,69 @@
+{% extends "layout.njk" %}
+
+  {% block head %}
+    <title>Foodfy</title>
+  {% endblock %}
+
+    {% block content %}
+    
+      <section class="chef">
+        <div class="img-chef">
+          <img src="./assets/chef.png" alt="">
+        </div>
+
+        <div class="text-chef">
+          <h2>As melhores receitas</h2>
+          <p>
+            Aprenda a construir os melhores pratos com receitas criadas por profissionais do mundo inteiro.
+          </p>
+        </div>
+      </section>
+
+      <section class="most-acess">
+      
+        <div class="text">
+          <h2>Mais Acessadas</h2>
+        </div>
+
+
+        <div class="recipes">
+          <div class="recipes-item" id="burguer">
+            <img src="./assets/burger.png" alt="burguer">
+            <h3>Triplo bacon burguer</h3>
+            <h5>por Jorge Relato</h5>
+          </div>
+
+          <div class="recipes-item" id="pizza">
+            <img src="./assets/pizza.png" alt="burguer">
+            <h3>Pizza 4 estações</h3>
+            <h5>por Fabiana Melo</h5>
+          </div>
+
+          <div class="recipes-item" id="espaguete">
+            <img src="./assets/espaguete.png" alt="burguer">
+            <h3>Espaguete ao alho</h3>
+            <h5>por Júlia Kinoto</h5>
+          </div>
+
+          <div class="recipes-item" id="lasanha">
+            <img src="./assets/lasanha.png" alt="burguer">
+            <h3>Lasanha mac n’ cheese</h3>
+            <h5>por Juliano Vieira</h5>
+          </div>
+
+          <div class="recipes-item" id="doce">
+            <img src="./assets/doce.png" alt="burguer">
+            <h3>Docinhos pão-do-céu</h3>
+            <h5>por Ricardo Golvea</h5>
+          </div>
+
+          <div class="recipes-item" id="asinhas">
+            <img src="./assets/asinhas.png" alt="burguer">
+            <h3>Asinhas de frango ao barbecue</h3>
+            <h5>por Vania Steroski</h5>
+          </div>
+        </div>
+
+      </section>
+
+  {% endblock %}
