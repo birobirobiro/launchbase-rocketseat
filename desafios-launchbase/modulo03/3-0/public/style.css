@@ -306,6 +306,7 @@ body {
   font-weight: bold;
   display: flex;
   align-items: flex-end;
+  padding-top: 50px;
 } 
 
 .recipes-details-ingredients {
@@ -313,16 +314,30 @@ body {
   color: #444444;
   line-height: 28px;
   padding-top: 20px;
+  padding-left: 20px;
 }
 
 .recipes-details-preparation {
   font-size: 24px;
   font-weight: bold;
+  display: flex;
+  align-items: flex-end;
+  padding-top: 39px;
 }
 
 .recipes-details-additional-information {
   font-size: 24px;
   font-weight: bold;
+  display: flex;
+  align-items: flex-end;
+  padding-top: 37px;
+}
+
+.recipes-details-additional-information-description {
+  font-size: 18px;
+  color: #444444;
+  line-height: 28px;
+  padding-top: 20px;
 }
 
 .recipes-details-hide-show {
