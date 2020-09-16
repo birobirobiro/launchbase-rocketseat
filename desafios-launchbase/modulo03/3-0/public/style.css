@@ -16,13 +16,6 @@ body {
   margin: 0 auto;
 }
 
-.menu  img{
-  padding-top: 36.1px;
-  padding-right: 122.4px;
-  width: 90.6px;
-  height: 26.9px;
-}
-
 .menu {
   display: flex;
   flex-direction: row;
@@ -36,6 +29,13 @@ body {
  font-size: 16px;
  text-decoration: none;
  color: black;
+}
+
+.menu img{
+  /* padding-top: 36.1px;
+  padding-right: 122.4px; */
+  width: 90.6px;
+  height: 26.9px;
 }
 
 .chef {
@@ -210,6 +210,11 @@ body {
   gap: 20px;
 }
 
+.recipes-grid a {
+  text-decoration: none;
+  color: black;
+}
+
 /* MODAL */
 
 .modal-overlay {
@@ -294,6 +299,7 @@ body {
 .recipes-details-title {
   font-size: 36px;
   font-weight: bold;
+  padding-bottom: 4px;
 }
 
 .recipes-details-title-author {
@@ -301,28 +307,21 @@ body {
   font-size: 20;
 }
 
-.recipes-details-ingredients-title {
+.recipes-details-ingredients-title, .recipes-details-preparation-title  {
   font-size: 24px;
   font-weight: bold;
   display: flex;
   align-items: flex-end;
   padding-top: 50px;
+  padding-bottom: 20px;
 } 
 
-.recipes-details-ingredients {
+.recipes-details-ingredients, .recipes-details-preparation  {
   font-size: 18px;
   color: #444444;
   line-height: 28px;
   padding-top: 20px;
   padding-left: 20px;
-}
-
-.recipes-details-preparation {
-  font-size: 24px;
-  font-weight: bold;
-  display: flex;
-  align-items: flex-end;
-  padding-top: 39px;
 }
 
 .recipes-details-additional-information {
@@ -338,6 +337,7 @@ body {
   color: #444444;
   line-height: 28px;
   padding-top: 20px;
+  padding-bottom: 50px;
 }
 
 .recipes-details-hide-show {

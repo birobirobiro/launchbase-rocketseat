@@ -19,11 +19,14 @@ server.get("/", function(req, res) {
 })
 
 server.get("/receitas", function(req, res) {
-  return res.render("receitas", {data});
+  return res.render("receitas", {recipes: data});
 })
 
-server.get("/recipes", function (req, res) {
-  return res.render("recipes", {data})
+server.get("/recipes/:index", function (req, res) {
+  const recipes = data // Array de receitas carregadas do data.js
+  const recipeIndex = req.params.index;
+
+  return res.render("recipes", {recipe: recipes[recipeIndex]})
 })
 
 server.get("/sobre", function(req, res) {
