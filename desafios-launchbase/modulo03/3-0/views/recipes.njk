@@ -24,11 +24,11 @@
         <p>Ingredientes</p>
 
         <div class="recipes-details-hide-show">
-          ESCONDER
+          <button>ESCONDER</button>
         </div>
       </div>
 
-      <div class="recipes-details-ingredients">
+      <div class="recipes-details-ingredients show content">
         <ul>
           {% for ingredient in recipe.ingredients %}
           <li>
@@ -42,12 +42,12 @@
 
         <p>Modo de preparo</p>
         <div class="recipes-details-hide-show">
-          MOSTRAR
+          <button>ESCONDER</button>
         </div>
 
       </div>
 
-      <div class="recipes-details-preparation">
+      <div class="recipes-details-preparation show content">
         <ul>
           {% for ingredient in recipe.ingredients %}
           <li>
@@ -61,11 +61,11 @@
         <p>Informações adicionais</p>
 
         <div class="recipes-details-hide-show">
-          ESCONDER
+          <button>ESCONDER</button>
         </div>
       </div>
 
-      <div class="recipes-details-additional-information-description">
+      <div class="recipes-details-additional-information-description show content">
 
         <p>
           {{recipe.information}}
@@ -76,5 +76,7 @@
     </div>
 
   </div>
+
+  <script src="/script.js"></script>
 
 {% endblock %}

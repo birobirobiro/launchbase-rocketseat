@@ -340,9 +340,20 @@ body {
   padding-bottom: 50px;
 }
 
-.recipes-details-hide-show {
+.recipes-details-hide-show button {
   font-size: 12px;
   color: #999;
   padding-left: 8px;
   margin-bottom: 3px;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.hide{
+  display: none;
+}
+
+.show{
+  display: block;
 }
