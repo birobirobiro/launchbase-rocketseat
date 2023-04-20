@@ -12,6 +12,6 @@
   "dependencies": {
     "express": "^4.17.3",
     "nodemon": "^2.0.4",
-    "nunjucks": "^3.2.2"
+    "nunjucks": "^3.2.4"
   }
 }
